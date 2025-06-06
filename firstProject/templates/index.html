@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aniket's Portfolio</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Aniket's Dev Space 🚀</h1>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I'm <span>Aniket</span></h2>
+    <p>Aspiring Full-Stack Developer learning Django 💻</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aniket | Powered by Django ⚙️</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Aniket's Portfolio</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Aniket's Dev Space 🚀</h1>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Contact Me</h2>
+    <p>You can reach me through:</p>
+    <ul style="margin-top: 1rem; list-style: none; line-height: 2;">
+      <li><strong>Email:</strong> aniket@example.com</li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/aniket-gaikwad30" target="_blank">Click here</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aniket-gaikwad30/" target="_blank">Click here</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aniket | Powered by Django ⚙️</p>
+  </footer>
+</body>
+</html>

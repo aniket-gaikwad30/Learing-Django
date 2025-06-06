@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Aniket's Portfolio</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Aniket's Dev Space 🚀</h1>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>About Me</h2>
+    <p>
+      I'm Aniket — a passionate and curious learner diving deep into web development.  
+      Currently learning Django and MERN stack to build modern, full-stack applications.
+    </p>
+    <p>
+      I enjoy solving real-world problems with code and constantly strive to improve.  
+      When I’m not coding, I love listening to music and learning about new tech trends.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aniket | Powered by Django ⚙️</p>
+  </footer>
+</body>
+</html>
